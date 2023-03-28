@@ -386,7 +386,16 @@ return [
         [
             'text'       => 'Eventos',
             'icon'       => 'fas fa-building',
-            'url'        => '/events',
+            'submenu'    => [
+                [
+                    'text' => 'Lista de eventos',
+                    'url' => '/events'
+                ],
+                [
+                    'text' => 'Registrar evento',
+                    'url' => '/events/create'
+                ],
+            ]
         ]
     ],
 

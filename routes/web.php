@@ -29,4 +29,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/events', function () {
         return view('events');
     })->name('events');
+
+    Route::get('/events/create', function () {
+        return view('events-create');
+    })->name('events.create');
 });
