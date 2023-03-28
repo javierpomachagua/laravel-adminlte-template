@@ -25,4 +25,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', function () {
         return view('profile');
     })->name('profile');
+
+    Route::get('/events', function () {
+        return view('events');
+    })->name('events');
 });

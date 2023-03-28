@@ -383,6 +383,11 @@ return [
             'icon_color' => 'cyan',
             'url'        => '#',
         ],
+        [
+            'text'       => 'Eventos',
+            'icon'       => 'fas fa-building',
+            'url'        => '/events',
+        ]
     ],
 
     /*
