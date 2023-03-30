@@ -4,7 +4,7 @@
 
 @section('content_header')
     <h1 class="m-0 text-dark">Registrar Evento</h1>
-@stop
+@endsection
 
 @section('content')
     <div>
@@ -17,16 +17,35 @@
                                  fgroup-class="col-md-6"/>
         </div>
         <div class="row">
-            <x-adminlte-select name="type" label="Tipos" fgroup-class="col-md-6">
+            <x-adminlte-select name="status" label="Estado" fgroup-class="col-md-6">
                 <x-slot name="prependSlot">
                     <div class="input-group-text bg-gradient-info">
                         <i class="fas fa-building"></i>
                     </div>
                 </x-slot>
                 <option>Seleccione</option>
+                <option>Borrador</option>
+                <option>Publicado</option>
+            </x-adminlte-select>
+        </div>
+        <div class="row">
+            <x-adminlte-select2 name="type" label="Tipo"
+                                data-placeholder="Seleccione" fgroup-class="col-md-6">
+                <x-slot name="prependSlot">
+                    <div class="input-group-text bg-gradient-info">
+                        <i class="fas fa-building"></i>
+                    </div>
+                </x-slot>
+                <option value=""></option>
                 <option>Concierto</option>
                 <option>Fútbol</option>
-            </x-adminlte-select>
+                <option>Teatro</option>
+                <option>Standup Comedy</option>
+                <option>Festival</option>
+                <option>Museo</option>
+
+            </x-adminlte-select2>
+
         </div>
         <div class="row">
             <div class="form-group col-md-6">
