@@ -48,6 +48,19 @@
 
         </div>
         <div class="row">
+            @php
+                $config = ['format' => 'YYYY-MM-DD'];
+            @endphp
+            <x-adminlte-input-date name="date" label="Fecha" :config="$config" placeholder="Seleccione"
+                                   fgroup-class="col-md-6">
+                <x-slot name="prependSlot">
+                    <div class="input-group-text bg-gradient-info">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                </x-slot>
+            </x-adminlte-input-date>
+        </div>
+        <div class="row">
             <div class="form-group col-md-6">
                 <x-adminlte-button label="Registrar" theme="primary" icon="fas fa-save"/>
             </div>
